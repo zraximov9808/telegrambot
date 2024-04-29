@@ -150,10 +150,13 @@
           var loader = document.getElementById("loader");
           submitButton.disabled = true;
           loader.style.display = "block";
-          fetch("bu yerga app script url yoziladi", {
-            method: "POST",
-            body: formData,
-          })
+          fetch(
+            "https://script.google.com/macros/s/AKfycbyb3D148psDAWFGWR4DgruSwCyr2ojaTwfqLg4tHYpYLnGBPoi6fECPad1XNrgUmlYfbA/exec",
+            {
+              method: "POST",
+              body: formData,
+            }
+          )
             .then((response) => {
               if (!response.ok) {
                 throw new Error("Network response was not ok");
