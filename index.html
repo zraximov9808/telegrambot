@@ -104,23 +104,15 @@
       <h1>So`rovnoma</h1>
       <br />
       <br />
-      <label for="name">Bo'lim nomi:</label>
+      <label for="name">Ismingiz:</label>
       <input type="text" id="name" name="name" required />
 
-      <label for="phoneNumber">Maxsulot nomi:</label>
-      <input type="phoneNumber" id="phoneNumber" name="product" required />
+      <label for="name">Izoh:</label>
+      <input type="text" id="name" name="description" required />
 
-      <label for="role">Miqdori:</label>
-      <input type="role" id="role" name="quantity" required />
+      <label for="name">Summa:</label>
+      <input type="text" id="name" name="amount" required />
 
-      <!-- <label for="region">Region:</label>
-      <input type="region" id="region" name="region" required />
-
-      <label for="date">Obyektni topshirish muddati:</label>
-      <input type="date" id="date" name="date" required />
-
-      <label for="comment">Kamchiliklar:</label>
-      <textarea id="comment" name="comment" rows="4" cols="50"></textarea> -->
       <button
         type="submit"
         id="submitButton"
@@ -151,7 +143,7 @@
           submitButton.disabled = true;
           loader.style.display = "block";
           fetch(
-            "https://script.google.com/macros/s/AKfycbyb3D148psDAWFGWR4DgruSwCyr2ojaTwfqLg4tHYpYLnGBPoi6fECPad1XNrgUmlYfbA/exec",
+            "https://script.google.com/macros/s/AKfycbwMaBiErXlnPz5xIifzFNbjSe37CY0CrdNB8zPUyjAePuZipTgqH7bogX5iJlinZsKa/exec",
             {
               method: "POST",
               body: formData,
