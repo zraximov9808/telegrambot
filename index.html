@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>So`rovnoma</title>
+    <title>Кунлик хисобот</title>
     <style>
       body {
         font-family: Arial, sans-serif;
@@ -101,23 +101,27 @@
   </head>
   <body>
     <form id="surveyForm">
-      <h1>So`rovnoma</h1>
+      <h1>Кунлик хисобот</h1>
       <br />
       <br />
-      <label for="name">Ismingiz:</label>
+
+      <label for="name">Бўлим номи:</label>
       <input type="text" id="name" name="name" required />
 
-      <label for="name">Izoh:</label>
+      <label for="name">Махсулот номи:</label>
+      <input type="text" id="name" name="product" required />
+
+      <label for="name">Ўлчов бирлиги:</label>
       <input type="text" id="name" name="description" required />
 
-      <label for="name">Summa:</label>
+      <label for="name">Миқдори:</label>
       <input type="text" id="name" name="amount" required />
 
       <button
         type="submit"
         id="submitButton"
         style="
-          background-color: #4caf50;
+          background-color: #4c3eed;
           color: #fff;
           width: 100%;
           padding: 10px 40px;
@@ -127,7 +131,7 @@
           font-size: 16px;
         "
       >
-        👉 Yuborish 👈
+        Юбориш
       </button>
       <div class="loader" id="loader" style="display: none"></div>
     </form>
@@ -143,7 +147,7 @@
           submitButton.disabled = true;
           loader.style.display = "block";
           fetch(
-            "https://script.google.com/macros/s/AKfycbwMaBiErXlnPz5xIifzFNbjSe37CY0CrdNB8zPUyjAePuZipTgqH7bogX5iJlinZsKa/exec",
+            "https://script.google.com/macros/s/AKfycbxPJBNgdZUyklfkrXQCt9bcaxFp-HJ9FfSSgv-wwZW02xgHKJNSvO2NkfRAijnM89dN/exec",
             {
               method: "POST",
               body: formData,
